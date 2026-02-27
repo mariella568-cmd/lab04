@@ -1,0 +1,72 @@
+1. Introduction Phase
+HR: Good morning. Thank you for joining us today. Could you start by introducing yourself?
+C: Good morning, and thank you for the opportunity. My name is Sara Haddad. I recently graduated with a degree in Mechanical Engineering, where I developed strong foundations in thermodynamics, fluid mechanics, and machine design. I also completed a capstone project involving the design and simulation of a compact heat exchanger. I’m particularly interested in design-oriented roles where I can combine analysis, CAD modeling, and problem-solving.
+HR: Great. What motivated you to pursue mechanical engineering?
+C: I’ve always been interested in understanding how machines work and how systems can be optimized. Mechanical engineering offered a broad discipline covering design, energy systems, and manufacturing, which matched my curiosity and career goals.
+________________________________________
+2. Motivation & Company Fit
+HR: What attracted you to this position?
+C: The role emphasizes product design and performance improvement, which aligns with my academic projects and internship experience. I also appreciate your company’s focus on innovation and multidisciplinary collaboration.
+HR: What would you say are your main strengths?
+C: My main strengths are analytical thinking, CAD proficiency, and persistence in problem-solving. I also work well in teams and communicate technical concepts clearly.
+HR: And a weakness?
+C: Early in my studies, I focused heavily on theoretical work. I’ve been actively improving my hands-on skills through lab work, simulations, and small personal projects.
+________________________________________
+3. Fundamental Technical Assessment
+TE: Let’s move to some technical questions. Can you explain the difference between stress and strain?
+C: Stress is the internal force per unit area within a material caused by an external load, typically measured in Pascals. Strain represents the deformation relative to the original dimension and is dimensionless.
+TE: Good. What is Reynolds number and why is it important?
+C: Reynolds number is a dimensionless parameter used to predict flow regime behavior by comparing inertial and viscous forces. It helps determine whether flow is laminar, transitional, or turbulent.
+TE: Can you list the main heat transfer modes?
+C: Conduction, convection, and radiation.
+TE: What is factor of safety?
+C: It is the ratio between material strength and the expected working stress, providing a margin against failure due to uncertainties.
+________________________________________
+4. Design & Engineering Practice
+TE: Tell me about your experience with CAD tools.
+C: I primarily use SolidWorks for 3D modeling and assemblies. I’ve created parametric parts, conducted interference checks, and generated technical drawings for manufacturing.
+TE: Walk me through your design process.
+C: I begin with requirement analysis, followed by concept generation and selection. Then I perform preliminary calculations, create CAD models, run simulations if necessary, refine the design for manufacturability, and finalize documentation.
+TE: How do you select materials?
+C: I consider mechanical properties, operating environment, cost, manufacturability, weight, and availability. I also use material selection charts and standards when appropriate.
+________________________________________
+5. Project Discussion
+TE: Tell us about a project you are proud of.
+C: My final-year project involved designing a compact shell-and-tube heat exchanger for small industrial applications. I was responsible for thermal calculations, CAD modeling, and CFD simulation.
+TE: What challenges did you encounter?
+C: Balancing heat transfer efficiency with pressure drop constraints was challenging. I iterated the design and adjusted tube arrangement to optimize both parameters.
+TE: What would you improve if you repeated the project?
+C: I would incorporate experimental validation to compare simulation and real performance.
+________________________________________
+6. Problem-Solving Scenario
+TE: Suppose a rotating shaft experiences excessive vibration. How would you approach this?
+C: I would first identify vibration sources such as imbalance, misalignment, or resonance. Then I would conduct measurements, check balancing, inspect bearings, verify alignment, and evaluate operating speed relative to natural frequencies.
+TE: A component fails prematurely. What steps do you take?
+C: I would perform root cause analysis including load verification, material inspection, fracture analysis, environmental factors review, and comparison with design assumptions.
+________________________________________
+7. Manufacturing Knowledge
+TE: Difference between casting and forging?
+C: Casting involves pouring molten material into molds, offering complex geometry capability. Forging uses compressive forces on solid material, improving mechanical properties and grain structure.
+TE: What is CNC machining?
+C: Computer-controlled machining process enabling precise and repeatable manufacturing operations such as milling and turning.
+TE: Are you familiar with preventive maintenance?
+C: Yes, it involves scheduled inspections and servicing to prevent unexpected failures and extend equipment life.
+________________________________________
+8. Behavioral Assessment
+HR: Tell me about a time you had conflict in a team.
+C: During a project, we disagreed on design direction. I suggested evaluating both approaches using objective criteria and simulation results, which helped us reach consensus.
+HR: How do you manage deadlines?
+C: I break tasks into milestones, prioritize critical activities, and track progress using simple planning tools.
+HR: How do you handle feedback?
+C: I view feedback as an opportunity for improvement and actively apply suggestions to enhance my work.
+________________________________________
+9. Closing Phase
+HR: Why should we hire you?
+C: I bring solid fundamentals, practical design exposure, strong motivation to learn, and a collaborative mindset that would allow me to contribute effectively while growing in the role.
+HR: Where do you see yourself in five years?
+C: I aim to become a competent mechanical engineer capable of leading design initiatives and mentoring junior engineers.
+HR: Do you have any questions for us?
+C: Yes, could you describe the typical onboarding process and the main projects this role will support?
+HR: Certainly — we’ll explain that next. Thank you for your time today.
+C: Thank you for the opportunity.
+
