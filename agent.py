@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import json
 
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
@@ -111,6 +112,47 @@ def main():
                 content = item.content[0].text
                 print(f"{role}: {content}\n")
 
+        # SAVE RESULTS TO FILE
+
+
+        results_file = script_dir / "evaluation-results.json"
+
+        # Collect conversation log
+        items = openai_client.conversations.items.list(
+            conversation_id=conversation.id
+        )
+
+        conversation_log = []
+
+        for item in items:
+            if item.type == "message":
+                conversation_log.append(
+                    {
+                        "role": item.role,
+                        "content": item.content[0].text,
+                    }
+                )
+
+        evaluation_data = {
+            "agent_name": agent.name,
+            "model_deployment": model_deployment,
+            "evaluation_result": response.output_text,
+            "conversation_log": conversation_log,
+        }
+
+        # Write results to file
+        with open(results_file, "w", encoding="utf-8") as f:
+            json.dump(evaluation_data, f, indent=4)
+
+        print(f"\nResults saved to: {results_file}")
+
+
+        # PRINT CONVERSATION LOG
+
+        print("\nConversation Log:\n")
+
+        for entry in conversation_log:
+            print(f"{entry['role'].upper()}: {entry['content']}\n")
 
 if __name__ == "__main__":
     main()
