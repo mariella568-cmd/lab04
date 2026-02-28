@@ -112,40 +112,14 @@ def main():
                 content = item.content[0].text
                 print(f"{role}: {content}\n")
 
-        # SAVE RESULTS TO FILE
+        # SAVE ONLY THE EVALUATION RESULT
 
+        results_file = script_dir / "evaluation-results.txt"
 
-        results_file = script_dir / "evaluation-results.json"
-
-        # Collect conversation log
-        items = openai_client.conversations.items.list(
-            conversation_id=conversation.id
-        )
-
-        conversation_log = []
-
-        for item in items:
-            if item.type == "message":
-                conversation_log.append(
-                    {
-                        "role": item.role,
-                        "content": item.content[0].text,
-                    }
-                )
-
-        evaluation_data = {
-            "agent_name": agent.name,
-            "model_deployment": model_deployment,
-            "evaluation_result": response.output_text,
-            "conversation_log": conversation_log,
-        }
-
-        # Write results to file
         with open(results_file, "w", encoding="utf-8") as f:
-            json.dump(evaluation_data, f, indent=4)
+          f.write(response.output_text)
 
-        print(f"\nResults saved to: {results_file}")
-
+       print(f"\nEvaluation result saved to: {results_file}")
 
         # PRINT CONVERSATION LOG
 
@@ -153,6 +127,14 @@ def main():
 
         for entry in conversation_log:
             print(f"{entry['role'].upper()}: {entry['content']}\n")
+            
+        # Clean up
+        openai_client.conversations.delete(conversation_id=conversation.id)
+        print("Conversation deleted")
 
+        project_client.agents.delete_version(agent_name=agent.name, agent_version=agent.version)
+        print("Agent deleted")
+        
 if __name__ == "__main__":
     main()
+
